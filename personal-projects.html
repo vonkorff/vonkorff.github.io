@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michael Von Korff | Personal Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fafafa;
+    }
+
+    .header {
+      padding: 60px 20px 30px 20px;
+      text-align: center;
+      background: white;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .header p {
+      margin-top: 12px;
+      font-size: 18px;
+      color: #666;
+    }
+
+    .site-nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: #444;
+      padding: 8px 14px;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      background: #fff;
+      font-weight: 500;
+    }
+
+    .site-nav a:hover {
+      color: #000;
+      border-color: #bbb;
+    }
+
+    .site-nav a.active {
+      color: #000;
+      border-color: #999;
+      background: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .sidebar {
+      width: 250px;
+      padding-right: 40px;
+      position: sticky;
+      top: 40px;
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .project {
+      margin-bottom: 80px;
+    }
+
+    .project h1 {
+      margin-bottom: 16px;
+      font-size: 28px;
+    }
+
+    .empty-state {
+      margin-top: 8px;
+      color: #555;
+      font-size: 18px;
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        position: relative;
+        padding-right: 0;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Michael Von Korff</h1>
+    <p>EdTech Product Manager</p>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Products</a>
+      <a class="active" href="personal-projects.html">Personal Projects</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Personal Projects</h2>
+    </div>
+
+    <div class="content">
+      <div class="project">
+        <h1>Personal Projects</h1>
+        <p class="empty-state">Projects coming soon.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
