@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Michael Von Korff | Product Portfolio</title>
+  <title>Michael Von Korff | Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <style>
@@ -15,12 +15,61 @@
     }
 
     hr {
-      border: none;          
-      height: 2px;           
+      border: none;
+      height: 2px;
       background-color: #ccc;
-      margin: 40px 0;        /* 40px space above and below */
+      margin: 40px 0;
     }
-    
+
+    .header {
+      padding: 60px 20px 30px 20px;
+      text-align: center;
+      background: white;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .header p {
+      margin-top: 12px;
+      font-size: 18px;
+      color: #666;
+    }
+
+    .site-nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: #444;
+      padding: 8px 14px;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      background: #fff;
+      font-weight: 500;
+    }
+
+    .site-nav a:hover {
+      color: #000;
+      border-color: #bbb;
+    }
+
+    .site-nav a.active {
+      color: #000;
+      border-color: #999;
+      background: #f4f4f4;
+    }
+
     .container {
       display: flex;
       max-width: 1200px;
@@ -28,7 +77,6 @@
       padding: 40px 20px;
     }
 
-    /* Left column */
     .sidebar {
       width: 250px;
       padding-right: 40px;
@@ -55,7 +103,6 @@
       color: #000;
     }
 
-    /* Right column */
     .content {
       flex: 1;
     }
@@ -83,10 +130,9 @@
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
-    /* Responsive */
     @media (max-width: 900px) {
       .container {
         flex-direction: column;
@@ -99,40 +145,19 @@
         margin-bottom: 40px;
       }
     }
-  /* Header */
-  .header {
-    padding: 60px 20px 40px 20px;
-    text-align: center;
-    background: white;
-    border-bottom: 1px solid #eaeaea;
-  }
-
-  .header h1 {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-  }
-
-  .header p {
-    margin-top: 12px;
-    font-size: 18px;
-    color: #666;
-  }
   </style>
 </head>
-
 <body>
+  <div class="header">
+    <h1>Michael Von Korff</h1>
+    <p>EdTech Product Manager</p>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Products</a>
+      <a href="personal-projects.html">Personal Projects</a>
+    </nav>
+  </div>
 
-<!-- HEADER -->
-<div class="header">
-  <h1>Michael Von Korff</h1>
-  <p> EdTech Product Manager</p>
-</div>
-  
   <div class="container">
-
-    <!-- LEFT COLUMN -->
     <div class="sidebar">
       <h2>Products</h2>
       <a href="#iready">i-Ready Math</a>
@@ -141,116 +166,58 @@
       <a href="#beanandnothingness">Bean and Nothingness</a>
     </div>
 
-    <!-- RIGHT COLUMN -->
     <div class="content">
-
       <div class="product" id="iready">
         <h1>i-Ready Math</h1>
-
         <ul>
-          <li>
-            <strong>My role:</strong> Product manager, associate director of product management. 
-            I led the development of hundreds of interactive digital lessons, then built and managed 
-            a high-functioning team of 6 product managers to continue development.
-          </li>
-
-          <li>
-            <strong>Product Impact:</strong> i-Ready is an industry-leading K-8 personalized learning 
-            program used by 14+ million students across the US. It has demonstrated significant 
-            positive impacts on student achievement thanks to its conceptual strength, deep 
-            interactivity, rich feedback, and integration with the i-Ready Inform diagnostic assessment.
-          </li>
+          <li><strong>My role:</strong> Product manager, associate director of product management. I led the development of hundreds of interactive digital lessons, then built and managed a high-functioning team of 6 product managers to continue development.</li>
+          <li><strong>Product Impact:</strong> i-Ready is an industry-leading K-8 personalized learning program used by 14+ million students across the US. It has demonstrated significant positive impacts on student achievement thanks to its conceptual strength, deep interactivity, rich feedback, and integration with the i-Ready Inform diagnostic assessment.</li>
         </ul>
-
         <div class="gallery">
           <img src="i-Ready Math 1.png" alt="An i-Ready lesson. The user is asked to complete the multiplication sentence that describes a box of peaches.">
           <img src="i-Ready Math 2.png" alt="A kindergarten-level i-Ready lesson with text and audio in Spanish.">
         </div>
+      </div>
+      <hr>
 
-      <hr>  
       <div class="product" id="ireadypro">
         <h1>i-Ready Pro Math</h1>
-
         <ul>
-          <li>
-            <strong>My role:</strong> “Zero-to-one” product manager leading the creation of the next generation of Curriculum Associates’ 
-            personalized middle school math program, from product vision and roadmap to post-release analytics and iteration.
-          </li>
-
-          <li>
-            <strong>Product Impact:</strong> The program is brand-new in the 2025-26 school year, but it already has 1+ million users. 
-            Early data indicates a major (10%+) positive impact on student performance on critical math topics and significant improvements 
-            to student engagement, thanks to the program’s powerful and nuanced adaptivity; its balance between learning acceleration and 
-            foundational skills intervention.
-          </li>
+          <li><strong>My role:</strong> “Zero-to-one” product manager leading the creation of the next generation of Curriculum Associates' personalized middle school math program, from product vision and roadmap to post-release analytics and iteration.</li>
+          <li><strong>Product Impact:</strong> The program is brand-new in the 2025-26 school year, but it already has 1+ million users. Early data indicates a major (10%+) positive impact on student performance on critical math topics and significant improvements to student engagement, thanks to the program's powerful and nuanced adaptivity; its balance between learning acceleration and foundational skills intervention.</li>
         </ul>
-
         <div class="gallery">
           <img src="i-Ready Pro Math 1.png" alt="The i-Ready Pro Math student dashboard, where a student's progress and learning are tracked and celebrated.">
           <img src="i-Ready Pro Math 2.png" alt="An i-Ready Pro Math lesson. The user plays an interactive game about integers, in which ballons and weights are added to a ship to move it up and down.">
         </div>
+      </div>
       <hr>
+
       <div class="product" id="imaginemath">
         <h1>Imagine Math PreK-2</h1>
-
         <ul>
-          <li>
-            <strong>My role:</strong> Project manager, instructional lead. I coordinated a 50+-person cross-functional team of teachers, 
-            curriculum developers, artists, animators, voice actors, programmers, and software testers. I built and managed the project’s schedule, 
-            coordinating management of risks and issues; I also served as one of two e-learning design leads on the project.
-          </li>
-
-          <li>
-            <strong>Product Impact:</strong> As Reasoning Mind Blueprint, the program achieved early recognition for combining conceptual strength 
-            with a joyful, whimsical approach to early childhood mathematics. It won the NewSchools Ignite Challenge and was ultimately acquired by 
-            Imagine Learning, where it has served as a core offering of Imagine Math, a personalized learning program used by 2+ million students annually.
-          </li>
+          <li><strong>My role:</strong> Project manager, instructional lead. I coordinated a 50+-person cross-functional team of teachers, curriculum developers, artists, animators, voice actors, programmers, and software testers. I built and managed the project's schedule, coordinating management of risks and issues; I also served as one of two e-learning design leads on the project.</li>
+          <li><strong>Product Impact:</strong> As Reasoning Mind Blueprint, the program achieved early recognition for combining conceptual strength with a joyful, whimsical approach to early childhood mathematics. It won the NewSchools Ignite Challenge and was ultimately acquired by Imagine Learning, where it has served as a core offering of Imagine Math, a personalized learning program used by 2+ million students annually.</li>
         </ul>
-
         <div class="gallery">
-          <img src="Blueprint 1.png" alt="Imagine Math intro screen, featuring a joyful cast of child and animal characters and the words 'Let's Do Math!'">
-          <img src="Blueprint 2.png" alt="Imagine Math lesson. In the task shown, the user matches up objects by connecting them with lines, in order to check 
-            that there are the same number in each group.">
+          <img src="Blueprint 1.png" alt="Imagine Math intro screen, featuring a joyful cast of child and animal characters and the words 'Let's Do Math!'.">
+          <img src="Blueprint 2.png" alt="Imagine Math lesson. In the task shown, the user matches up objects by connecting them with lines, in order to check that there are the same number in each group.">
         </div>
-     <hr>
-     <div class="product" id="beanandnothingness">
+      </div>
+      <hr>
+
+      <div class="product" id="beanandnothingness">
         <h1>Bean and Nothingness</h1>
-
         <ul>
-          <li>
-            <strong>My role:</strong> Indie game studio co-founder. I designed the core game mechanics and initial puzzles and led efforts 
-            from playtesting to financial management to editing the game’s story.
-          </li>
-
-          <li>
-            <strong>Product Impact:</strong> The game received overwhelmingly positive reviews (98% positive on Steam), with $50k revenue and an active 
-            Discord community, building a reputation as a delightfully challenging indie puzzle game with deep emergent complexity arising from the 
-            interactions between its core mechanics.
-          </li>
+          <li><strong>My role:</strong> Indie game studio co-founder. I designed the core game mechanics and initial puzzles and led efforts from playtesting to financial management to editing the game's story.</li>
+          <li><strong>Product Impact:</strong> The game received overwhelmingly positive reviews (98% positive on Steam), with $50k revenue and an active Discord community, building a reputation as a delightfully challenging indie puzzle game with deep emergent complexity arising from the interactions between its core mechanics.</li>
         </ul>
-
         <div class="gallery">
           <img src="Bean and Nothingness 1.jpg" alt="A Bean and Nothingness puzzle featuring a girl and various beans and obstacles.">
           <img src="Bean and Nothingness 2.jpg" alt="A Bean and Nothingness puzzle featuring a girl and various beans, obstacles and monsters.">
         </div>
-        
       </div>
-
     </div>
-
   </div>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
